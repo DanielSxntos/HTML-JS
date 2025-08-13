@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Sua Loja de Eletrônicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>TechStore</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Promoções</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="carrinho-icon">
+            <span id="carrinho-contador">0</span>
+            <button id="ver-carrinho">🛒</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="produtos">
+            <h2>Nossos Produtos</h2>
+            <div class="produtos-grid">
+                <!-- Produto 1 -->
+                <div class="produto-card">
+                    <img src="imagens/teclado.jpg" alt="Teclado Mecânico">
+                    <h3>Teclado Mecânico RGB</h3>
+                    <p class="preco">R$ 299,90</p>
+                    <button class="adicionar-carrinho" data-id="1" data-nome="Teclado Mecânico RGB" data-preco="299.90">Adicionar ao Carrinho</button>
+                </div>
+                
+                <!-- Produto 2 -->
+                <div class="produto-card">
+                    <img src="imagens/mouse.jpg" alt="Mouse Gamer">
+                    <h3>Mouse Gamer 16000DPI</h3>
+                    <p class="preco">R$ 189,90</p>
+                    <button class="adicionar-carrinho" data-id="2" data-nome="Mouse Gamer 16000DPI" data-preco="189.90">Adicionar ao Carrinho</button>
+                </div>
+                
+                <!-- Produto 3 -->
+                <div class="produto-card">
+                    <img src="imagens/headset.jpg" alt="Headset Gamer">
+                    <h3>Headset Gamer 7.1</h3>
+                    <p class="preco">R$ 349,90</p>
+                    <button class="adicionar-carrinho" data-id="3" data-nome="Headset Gamer 7.1" data-preco="349.90">Adicionar ao Carrinho</button>
+                </div>
+                
+                <!-- Produto 4 -->
+                <div class="produto-card">
+                    <img src="imagens/monitor.jpg" alt="Monitor 144Hz">
+                    <h3>Monitor 24" 144Hz</h3>
+                    <p class="preco">R$ 1.299,90</p>
+                    <button class="adicionar-carrinho" data-id="4" data-nome="Monitor 24\" 144Hz" data-preco="1299.90">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal do Carrinho -->
+    <div id="carrinho-modal" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar-modal">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div id="carrinho-itens">
+                <!-- Itens do carrinho serão adicionados aqui via JavaScript -->
+                <p id="carrinho-vazio">Seu carrinho está vazio</p>
+            </div>
+            <div class="carrinho-total">
+                <p>Total: R$ <span id="carrinho-total">0,00</span></p>
+            </div>
+            <button id="finalizar-compra" class="botao-primario">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 TechStore - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+/projeto-eletronicos
+│   index.html
+│   style.css
+│   script.js
+│
+└───imagens
+    │   teclado.jpg
+    │   mouse.jpg
+    │   headset.jpg
+    │   monitor.jpg
